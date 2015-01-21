@@ -1,0 +1,18 @@
+<h1>My Blog</h1>
+<!-- ruby code inside <% %> 
+loop through the post variable 
+access each post using the local post variable inside ||-->
+<% @post.each do |post| %>
+	<h2><%= link_to post.title, post %></h2>
+<!-- use the %= if you want to output something -->
+
+<h2><%= post.title %></h2>
+<P><%= post.content %></P>
+
+<hr />
+<% end %>
+<div><%= link to "Add a new post", new_post_path %></div>
+
+
+
+
